@@ -3,12 +3,12 @@
   command = "npm run build"
 
 [[headers]]
-  for = "/*.js"
+  for = "/**"
   [headers.values]
-    Content-Type = "application/javascript"
+    X-Content-Type-Options = "nosniff"
 
 [[headers]]
-  for = "/*.mjs"
+  for = "/*.js"
   [headers.values]
     Content-Type = "application/javascript"
 
